@@ -1,0 +1,32 @@
+Phishing Email Analysis Report — Simulated Sample
+
+Sample Name: Fake PayPal Account Alert  
+Date Analyzed: 2025-10-21  
+Analyst: Sagar Saini
+
+Summary:
+This simulated phishing email impersonates PayPal using a spoofed sender address (support@paypall.com), urgent language, and a suspicious link. Technical analysis reveals SPF, DKIM, and DMARC failures, confirming the sender is unauthorized. The email also includes a fake HTML attachment likely used to steal credentials.
+
+Key Indicators:
+- Spoofed domain: paypall.com ≠ paypal.com
+- SPF: FAIL
+- DKIM: none
+- DMARC: FAIL
+- Link mismatch: visible text shows PayPal, actual href points to verify-paypal-security[.]com
+- Attachment: Account_Details.html (HTML phishing form)
+- Language: “Verify within 24 hours or account will be suspended”
+- Greeting: “Hi Customer” (generic)
+
+Recommended Actions:
+- Do not click links or open attachments
+- Mark as phishing and delete
+- If credentials were entered, change password and enable 2FA
+- Report to PayPal’s phishing team
+
+Files Included:
+- email-original.txt
+- header-analysis.txt
+- links.txt
+- attachments.txt
+- domain-checks.txt
+- screenshots/

@@ -1,0 +1,4 @@
+Attachment Name: Account_Details.html  
+Type: HTML file  
+Purpose: Likely contains a fake login form to steal credentials  
+Note: Do NOT open real phishing attachments. This is a simulated example.

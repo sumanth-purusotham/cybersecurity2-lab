@@ -1,0 +1,4 @@
+Sender Domain: paypall.com  
+Official Domain: paypal.com  
+Issue: Spelling mismatch — attacker used “paypall” to impersonate PayPal  
+Risk: High — users may not notice the typo and trust the sender

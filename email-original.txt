@@ -1,17 +1,3 @@
-Headers Found
-Header Name	Header Value
-Return-Path	<bounce@mailer-example.net>
-Received-SPF	fail (google.com: domain of bounce@mailer-example.net does not designate 45.77.12.34 as permitted sender) client-ip=45.77.12.34;
-Authentication-Results	mx.google.com; spf=fail (google.com: domain of bounce@mailer-example.net does not designate 45.77.12.34 as permitted sender) smtp.mailfrom=bounce@mailer-example.net; dkim=none (message not signed) header.d=none; dmarc=fail (p=NONE sp=NONE dis=NONE) header.from=paypall.com
-From	"PayPal Support" <support@paypall.com>
-To	itsumanth_20 <your.email@example.com>
-Subject	Urgent: Verify Your PayPal Account Now or It Will Be Suspended
-Date	Tue, 21 Oct 2025 17:12:30 +0530
-Message-ID	<20251021.171230.9f2a1c@mail45.example-host.com>
-MIME-Version	1.0
-Content-Type	text/html; charset="UTF-8"
-Content-Transfer-Encoding	7bit
-Received Header
 Return-Path: <bounce@mailer-example.net>
 Received: from mail45.example-host.com (mail45.example-host.com [45.77.12.34])
         by mx.google.com with ESMTP id abc123xyz;
