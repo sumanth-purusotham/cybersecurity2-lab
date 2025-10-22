@@ -1,67 +1,65 @@
-# Phishing Email Analysis Report
+# PHISHING EMAIL ANALYSIS — SIMULATED SAMPLE
 
-This repository contains an analysis of a public phishing email sample obtained from PhishTank. The goal is to identify phishing indicators, assess risks, and provide actionable insights for email security.
+## Sample Name
+Fake PayPal Account Alert (simulated)
 
----
+## Date Analyzed
+2025-10-21
 
-## Sample Overview
-
-- **Source:** Public phishing sample from PhishTank  
-- **Subject:** "Urgent: Account Suspension Notice"  
-- **Sender:** `support@paypa1.com`
-
----
-
-## Phishing Indicators
-
-1. **Spoofed Sender Address**  
-   - Email: `support@paypa1.com`  
-   - Issue: Domain mimics PayPal but uses a fake “1” instead of “l”
-
-2. **Header Discrepancies**  
-   - SPF Check: Failed  
-   - IP Origin: Unusual location (Russia)  
-   - Tool Used: MxToolbox Email Header Analyzer
-
-3. **Suspicious Links**  
-   - Displayed URL: `https://paypal.com`  
-   - Actual URL: `http://malicious-site.ru/paypal-login`  
-   - Technique: Hover reveals mismatched URL
-
-4. **Dangerous Attachment**  
-   - File: `AccountUpdate.docm`  
-   - Risk: Macro-enabled document could install malware
-
-5. **Urgent Language**  
-   - Example: "Your account will be suspended in 24 hours unless you verify your identity."
-
-6. **Grammar Errors**  
-   - Example: "We has detected unusual activity."  
-   - Example: "Please verify you informations."
+## Analyst
+Sagar Saini
 
 ---
 
-## Conclusion
-
-This email contains multiple phishing traits including:  
-
-- Spoofed sender  
-- Mismatched URLs  
-- Urgent tone  
-- Malware-laced attachments  
-
-**Action:** Flag and report immediately.
+## 📁 Evidence Included
+- `email-original.txt` — raw headers
+- `header-analysis.txt` — MXToolbox results
+- `links.txt` — suspicious hrefs
+- `attachments.txt` — phishing attachment
+- `domain-checks.txt` — domain mismatch notes
+- `screenshots/` — email and link hover images
+- `reports.txt` — summary report
 
 ---
 
-## Tools Used
-
-- **MxToolbox Header Analyzer** – for analyzing email headers  
-- **Hover-to-reveal URL inspection** – to detect URL mismatches  
-- **Manual grammar and tone review** – to spot suspicious content
+## 🧠 Summary
+This simulated email displays multiple phishing indicators: misspelled sender domain, SPF/DKIM/DMARC failures, mismatched visible link vs actual href, urgent threat language, and an HTML attachment — classify as phishing.
 
 ---
 
-## Disclaimer
+## 🔍 Observations
 
-This report is for educational and awareness purposes only. Do **not** click links or open attachments in phishing emails.
+| Indicator         | Evidence / File                | Why Suspicious |
+|------------------|--------------------------------|----------------|
+| From Address      | support@paypall.com            | Misspelled domain |
+| Return-Path       | bounce@mailer-example.net      | Bounce domain mismatch |
+| SPF               | header-analysis.txt — FAIL     | Unauthorized sender IP |
+| DKIM              | header-analysis.txt — none     | No signature |
+| DMARC             | header-analysis.txt — FAIL     | Policy not satisfied |
+| Link href         | links.txt — mismatched URL     | Redirects to fake domain |
+| Attachment        | attachments.txt — HTML file    | Likely phishing form |
+| Language/Tone     | screenshots/ — urgent threat   | Social engineering |
+
+---
+
+## ✅ Conclusion
+This email contains clear technical and behavioral signs of phishing. It should be flagged, reported, and deleted.
+
+---
+
+## 🔒 Recommended Actions
+- Mark as phishing and delete
+- Do not click links or open attachments
+- If credentials were entered, change password and enable 2FA
+- Report to PayPal’s phishing address
+
+---
+
+## 📦 Files Included
+- `email-original.txt`
+- `header-analysis.txt`
+- `links.txt`
+- `attachments.txt`
+- `domain-checks.txt`
+- `screenshots/`
+- `reports.txt`
