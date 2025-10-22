@@ -1,0 +1,24 @@
+From: PayPal Support support@paypall.com
+
+Subject: Urgent: Verify Your PayPal Account Now or It Will Be Suspended
+
+Hi Customer,
+
+We detected unusual activity on your PayPal account and temporarily limited access. To restore full access and prevent permanent suspension, please verify your account immediately.
+
+Click here to verify: https[:]//www.paypal.com/signin
+
+(Actual link: http[:]//verify-paypal-security[.]com/login.php) — DO NOT CLICK. This is part of the simulation.
+
+If you do not verify within 24 hours, your account will be permanently suspended and funds may be withheld.
+
+We apologize for the inconvenience. For your security, we ask you to confirm the following details:
+
+Full name
+
+Date of birth
+
+Last 4 digits of your card
+
+Regards,
+PayPal Support Team

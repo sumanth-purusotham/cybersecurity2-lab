@@ -1,0 +1,4 @@
+SPF result: FAIL
+DKIM result: none
+DMARC result: fail
+Origin IP: 45.77.12.34 (simulated)
